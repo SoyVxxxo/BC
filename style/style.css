@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+/* Galería responsive */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 180px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  header img,
+  .galeria img {
+    width: 100%;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+}
+
+/* Estilos de pagina Creador */
+/* boton */
+.boton-regresar {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.boton-regresar a {
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
